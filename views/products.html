@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Acme Products</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <a href = '/'>Home</a>
+        <h1>Products</h1>
+
+        <form action = '/products' method='post'>
+            <div class = 'form-group'>
+                <label for = 'item-field'> Name </label>
+                <input name = 'item' type = 'input' id = 'item-field' placeholder='item'>
+            </div>
+            <div class = 'form-group'>
+                <label for = 'rating-field'> Rating </label>
+                <input name = 'rating' type = 'input' id = 'rating-field' placeholder='rating'>
+            </div>
+            <div class = 'form-group'>
+                <input type = 'submit' value = 'Save' class = 'btn btn-primary'>
+            </div>
+
+
+            {% for item in items %}
+                <h1> {{item.item}}</h1>
+                <h1> {{item.rating}}</h1>
+            {% endfor %}
+        </form>
+    </body>
