@@ -10,7 +10,17 @@ function list(){
     return items;
 }
 
+
+function highest(){
+    items = items.sort();
+    return items[items.length - 1];
+}
+
+add('gus', '5');
+add('curr', '5');
+
 module.exports = {
     add: add,
-    list: list
+    list: list,
+    highest: highest
 };
