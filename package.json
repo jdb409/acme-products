@@ -1,0 +1,26 @@
+{
+  "name": "acme_products",
+  "version": "1.0.0",
+  "description": "Acme products website!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdb409/acme-products.git"
+  },
+  "author": "Jon Brandwein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdb409/acme-products/issues"
+  },
+  "homepage": "https://github.com/jdb409/acme-products#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.3",
+    "method-override": "^2.3.9",
+    "nunjucks": "^3.0.1"
+  }
+}
