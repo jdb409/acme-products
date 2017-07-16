@@ -11,7 +11,6 @@ nunjucks.configure('view', {noCache: true});
 
 app.use('/', router);
 
-
 app.listen(3000, function(){
     console.log('server running');
 });

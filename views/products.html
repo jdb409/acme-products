@@ -23,7 +23,7 @@
 
 
             {% for item in items %}
-                <h1> {{item.item}}</h1>
+                <h1> <a href = 'product/{{item.item}}'>{{item.item}}</h1>
                 <h1> {{item.rating}}</h1>
             {% endfor %}
         </form>

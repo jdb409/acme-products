@@ -10,6 +10,13 @@ function list(){
     return items;
 }
 
+function find(name){
+    for (var i = 0; i< items.length; i++){
+        if (items[i].item === name){
+            return items[i];
+        }
+    }
+}
 
 function highest(){
     items = items.sort();
@@ -22,5 +29,6 @@ add('curr', '5');
 module.exports = {
     add: add,
     list: list,
-    highest: highest
+    highest: highest,
+    find: find
 };
