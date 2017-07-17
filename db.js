@@ -23,6 +23,17 @@ function highest(){
     return items[items.length - 1];
 }
 
+function remove(name){
+    var index = 0;
+     for (var i = 0; i < items.length; i++){
+        if (items[i].item === name){
+            index = i;
+        }
+    }
+
+    items.splice(index, 1);
+}
+
 add('gus', '5');
 add('curr', '5');
 
@@ -30,5 +41,6 @@ module.exports = {
     add: add,
     list: list,
     highest: highest,
-    find: find
+    find: find,
+    remove: remove
 };

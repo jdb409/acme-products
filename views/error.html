@@ -3,9 +3,14 @@
     <head>
         <title> Acme Products</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href = 'stylesheets/stylesheet.css'>
     </head>
     <body>
-        <h1 class = 'text-success'> Sorry not a page</h1>
-         <a href = '/'>Home</a>
+        <h1 class = 'text-success'> Error!</h1>
+        {% if field %}
+        <h2> {{field}} must only contain {{type}}<h2>
+        <h3><a href = '/products'>Try Again</a> </h3>
+        {% endif %}
+        <h3>Go back <a href = '/'>Home</a> </h3>
     </body>
 </html>

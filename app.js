@@ -4,6 +4,7 @@ var router = require('./routes/router.js');
 
 var app = express();
 
+app.use(require('method-override')('_method'));
 app.use(express.static('public'));
 app.set('view engine', 'html');
 app.engine('html', nunjucks.render);
