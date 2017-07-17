@@ -1,10 +1,8 @@
 var router = require('express').Router();
-var express = require('express');
 var db = require('../db');
 var bodyParser = require('body-parser');
 
 router.use(bodyParser.urlencoded({ extended: false }));
-router.use(express.static(__dirname + '/public'));
 
 router.get('/', function(req, res){
     var highest = db.highest();
