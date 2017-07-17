@@ -19,8 +19,10 @@ function find(name){
 }
 
 function highest(){
-    items = items.sort();
-    return items[items.length - 1];
+    items = items.sort(function(a,b){
+        return b - a;
+    });
+    return items[0];
 }
 
 function remove(name){
@@ -34,8 +36,8 @@ function remove(name){
     items.splice(index, 1);
 }
 
-add('gus', '5');
-add('curr', '5');
+add('Campari', '10');
+add('Soda', '5');
 
 module.exports = {
     add: add,
