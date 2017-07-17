@@ -20,7 +20,7 @@ function find(name){
 
 function highest(){
     items = items.sort(function(a,b){
-        return b - a;
+        return b.rating - a.rating;
     });
     return items[0];
 }
